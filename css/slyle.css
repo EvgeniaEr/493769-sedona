@@ -1,0 +1,23 @@
+body {
+	font-size: 14рх;
+	line-height: 17px;
+	color: rgb(51, 51, 51);
+	font-weight: normal;
+	font-family: "PT Sans Regular", sans-serif;
+}
+
+.main-navigation {
+	font-size: 14px;
+	line-height: 16px;
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+	font-family: "PT Sans Bold", sans-serif;
+}
+
+h3 {
+	font-size: 21px;
+	line-height: 25px;
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+	font-family: "PT Sans Bold", sans-serif;
+}
