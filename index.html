@@ -17,125 +17,146 @@
                     <li><a class="menu-item" href="info.html">Информация</a></li>
                     <li><a class="menu-item" href="foto.html">Фото и видео</a></li>
                     <li><a class="menu-item" href="maps.html">Карта штата</a></li>
-                    <li><a class="menu-item" href="hotels.html">Гостиницы</a></li>
+                    <li class=class="site-navigation-current"><a class="menu-item" href="hotels.html">Гостиницы</a></li>
                 </ul>
             </nav>
         </header>
-        <main class="main-content-index">
-            <section class="sedona-foto">
-                <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
-                <img src="http://placehold.it/150x100" width="1200" height="450" alt="Фото Седоны">
-            </section>
-            <section class="about-reasons">
-                <p>
-                Седона - небольшой городок в Аризоне,<br>
-                заслуживающий большего!
-                </p>
-                <p>
-                Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
-                </p>
-            </section>
-            <section class="reson-one">
-                <h2 class="visually-hidden">Причины побывать в Седоне</h2>
-                <h3 class="reason-name-one">Наcтоящий <br> городок</h3>
-                <p class="reson-one">
-                    <span class="reason-number">-1-</span>
-                Седона - не атракцион для туристов,<br>
-                там течет своя жизнь
-                </p>
-                <img src="img/index/sedona-town.jpeg" width="800" height="260" alt="Фото городка Седона">
-            </section>
-            <section class="recommendations">
-                <ul class="recommendations-list">
-                    <li class="recommendation1">
-                        <h3 class="recommendation-name1">Жилье</h3> 
-                      <p class="recommendation1">
-                        Рекомендуем пожить в настоящем<br>
-                        мотеле, все как в кино! 
-                      </p>
-                      <img src="http://placehold.it/150x100" width="70" height="70" alt="Иконка домик">
-                    </li>
-                  <li class="recommendation2">
-                        <h3 class="recommendation-name2">Еда</h3> 
-                      <p class="recommendation2">
-                      Всегда заказывайте фирменный бургер,<br>
-                      вы не разочаруетесь!    
-                      </p>
-                      <img src="http://placehold.it/150x100" width="70" height="70" alt="Иконка еда">
-                    </li>
-                    <li class="recommendation3">
-                        <h3 class="recommendation-name3">Сувениры</h3> 
-                      <p class="recommendation3">
-                      Не только китайского, но и местного<br>
-                      производства!   
-                      </p>
-                      <img src="http://placehold.it/150x100" width="70" height="70" alt="Иконка сувениры">
-                    </li>
-                </ul>
-            </section>
-            <section class="reson-two">
-                <img src="img/index/bridge.jpeg" width="800" height="260" alt="Фото моста дьявола">
-                <h3 class="reason-name-two">Там есть <br> мост дьявола</h3>
-                <p class="reson-two">
-                    <span class="reason-number">-2-</span>
-                Да, по нему можно пройти! Если конечно<br>
-                вы осмелитесь
-                </p>
-            </section>
-            <section class="reasons-list">
-                <ul class="reasons">
-                    <li class="reson-three">
-                        <h3 class="reason-name-three">Небольшая <br> площадь</h3>
-                        <p class="reson-three">
-                            <span class="reason-number">-3-</span>
-                        Все достопримечательности<br>
-                        находятся очень близко
-                        </p>
-                    </li>
-                    <li class="reson-four">
-                        <h3 class="reason-four">Красивая <br> дорога</h3>
-                        <p class="reson-four">
-                            <span class="reason-number">-4-</span>
-                        Ехать в Седону из Лас-Вегаса совсем<br>
-                        не скучно!
-                        </p>
-                    </li>
-                    <li class="reson-five">
-                        <h3 class="reason-name-five">Мало <br> туристов</h3>
-                        <p class="reson-five">
-                            <span class="reason-number">-5-</span>
-                        Большинство едет в Гранд Каньон и<br>
-                        толпится там
-                        </p>
-                    </li>
-                </ul>
-            </section>
-            <section class="hotel-search-and-map">
-                <p>
-                  <b>Заинтересовались?</b>
-                Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостинец в Седоне
-                </p>
-                <button class="button-hotel-search" type="button">Поиск гостиницы в Седоне</button>
-                <form class="hotel-search" action="#" method="get">
-                    <label class="hotel-search">Дата заезда
-                        <input type="text" name="date-from">
-                    </label>
-                    <label class="hotel-search">Дата выезда
-                        <input type="text" name="date-to">
-                    </label>
-                    <label class="adults-form" for="adults">Взрослые:</label>
-                    <button class="minus">-</button>
-                    <input type="text" name="adults-form" id="adults">
-                    <button class="plus">+</button>
-                    <label class="children-form" for="children">Дети:</label>
-                    <button class="minus">-</button>
-                    <input type="text" name="children-form" id="children">
-                    <button class="plus">+</button>
-                    <input type="submit" value="Найти">
+        <main class="main-content-catalog">
+            <h1 class="visually-hidden">Поиск гостиницы в Седоне</h1>
+            <section class="filters">
+                <h2 class="visually-hidden">Фильтры для поиска гостиницы в Седоне</h2>
+                <form class="filter" method="get" action="#">
+                    <fieldset class="infrastructure">
+                        <legend>Инфраструктура</legend>
+                        <ul>
+                            <li class="filter-option">
+                                <label for="pool">Бассейн</label>
+                                <input class="filter-input-checkbox" type="checkbox" name="pool" id="pool" checked>
+                            </li>
+                            <li class="filter-option">
+                                <label for="рarking-place">Парковка</label>
+                                <input class="filter-input-checkbox" type="checkbox" name="рarking-place" id="рarking-place">
+                            </li>
+                            <li class="filter-option">
+                                <label for="wi-fi">Wi-Fi</label>
+                               <input class="filter-input-checkbox" type="checkbox" name="wi-fi" id="wi-fi">
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset class="type of accommodation">
+                        <legend>Тип жилья</legend>
+                        <ul>
+                            <li class="filter-option">
+                                <label for="hotel">Гостиница</label>
+                                <input class="filter-input-checkbox" type="checkbox" name="hotel" id="hotel" checked>
+                            </li>
+                            <li class="filter-option">
+                                <label for="motel">Мотель</label>
+                                <input class="filter-input-checkbox" type="checkbox" name="motel" id="motel" checked>
+                            </li>
+                            <li class="filter-option">
+                                <label for="apartments">Апартаменты</label>
+                                <input class="filter-input-checkbox" type="checkbox" name="apartments" id="apartments" checked>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset class="filter-price-from-to">
+                        <legend>Стоимость в сутки(Р):</legend>
+                        <label> От 0
+                            <input class="filter-price" type="text" name="filter-price-from">
+                        </label>
+                        <label> До 3000
+                            <input class="filter-price" type="text" name="filter-price-to">
+                         </label>
+                    </fieldset>
+                    <button class="button-filter-price-from-to" type="button">Показать</button>
                 </form>
-                <p class="map">
-                    <img src="http://placehold.it/150x100" width="1200" height="470" alt="Карта">
+            </section>
+            <section class="results-filters">
+                <p>
+                    <span>Найдено:3</span>
+                Сортировка:
                 </p>
+                <div class="results-filters-list">
+                    <ul>
+                        <li>
+                            <a class="results-filters-link-current" href="#">по цене</a>
+                        </li>
+                        <li>
+                            <a class="results-filters-link" href="#">по типу</a>
+                        </li>
+                        <li>
+                            <a class="results-filters-link" href="#">по рейтингу</a>
+                        </li>
+                        <li>
+                            <a class="results-filters-link-triangle" href="#">треугольник</a>
+                        </li>
+                        <li>
+                            <a class="results-filters-link-triangle-current" href="#">перевернутый треугольник</a>
+                        </li>
+                    </ul>
+                </div>  
+            </section> 
+            <section class="amara-resort">  
+                <h2 class="visually-hidden">Результаты поиска гостиниц в Седоне</h2>
+                <p>
+                    <img src="img/catalog/amara-resort.jpeg" width="135" height="90" alt="Фото гостиницы">
+                </p>  
+                <ul>
+                    <li>
+                        <h3>Amara resort & spa</h3>
+                        <p>
+                            <span>Гостиница</span> 
+                            <span>от 4000 Р.</span>
+                            <a class="button-blue" href="#">Подробнее</a>
+                            <a class="button-brown" href="#">Забронировать</a>
+                        </p>
+                    </li>
+                </ul>
+                <div class="amara-resort-raiting">
+                    <p>Звездочки</p>
+                    <p>Рейтинг:8,5</p>
+                </div>
+            </section>
+            <section class="desert-quail"> 
+                <p>
+                    <img src="img/catalog/desert-quail.jpeg" width="135" height="90" alt="Фото мотеля">
+                </p>
+                <ul>
+                    <li>
+                        <h3>Desert Quail Inn</h3>
+                        <p>
+                            <span>Мотель</span> 
+                            <span>от 3000 Р.</span>
+                            <a class="button-blue" href="#">Подробнее</a>
+                            <a class="button-brown" href="#">Забронировать</a>
+                        </p>
+                    </li>
+                </ul>
+                <div class="desert-quail-raiting">
+                    <p>Звездочки</p>
+                    <p>Рейтинг:8,9</p>
+                </div>
+            </section>
+            <section class="villas-at-poco">
+                <p>
+                    <img src="img/catalog/villas-at-poco.jpeg" width="135" height="90" alt="Фото апартаментов">
+                </p>
+                <ul>
+                    <li>
+                        <h3>Villas at Poco Diablo</h3>
+                        <p>
+                            <span>Апартаменты</span>
+                            <span>от 2000 Р.</span>
+                            <a class="button-blue" href="#">Подробнее</a>
+                            <a class="button-brown" href="#">Забронировать</a>
+                        </p>
+                    </li>
+                </ul>
+                <div class="villas-at-poco-raiting">
+                    <p>Звездочки</p>
+                    <p>Рейтинг:9,2</p>
+                </div>   
             </section>
         </main>
         <footer class="main-footer">
@@ -153,5 +174,5 @@
                 <a class="button" href="https://htmlacademy.ru"> website by HTML Academy</a>
             </p>
         </footer>
-  </body>
+    </body>
 </html>
