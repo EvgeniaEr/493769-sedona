@@ -9,7 +9,7 @@
         <header class="main-header">
             <p>
                 <a class="logo" href="index.html">
-                    <img src=http://placehold.it/150x100"" width="140" height="70" alt="Логотип Седона">
+                    <img src=http://placehold.it/150x100"" width="140" height="70" alt="Логотип">
                 </a>
             </p>
             <nav class="main-navigation">
@@ -68,16 +68,14 @@
                         <label> До 3000
                             <input class="filter-price" type="text" name="filter-price-to">
                          </label>
+                         <button class="button-filter-price-from-to" type="button">Показать</button>
                     </fieldset>
-                    <button class="button-filter-price-from-to" type="button">Показать</button>
                 </form>
             </section>
             <section class="results-filters">
-                <p>
-                    <span>Найдено:3</span>
-                Сортировка:
-                </p>
-                <div class="results-filters-list">
+                <span>Найдено:3</span>
+                <span>Сортировка:</span>
+                <section class="results-filters-list">
                     <ul>
                         <li>
                             <a class="results-filters-link-current" href="#">по цене</a>
@@ -89,75 +87,59 @@
                             <a class="results-filters-link" href="#">по рейтингу</a>
                         </li>
                         <li>
-                            <a class="results-filters-link-triangle" href="#">треугольник</a>
+                            <a class="results-filters-link-triangle" href="#">выдача результатов по возрастанию</a>
                         </li>
                         <li>
-                            <a class="results-filters-link-triangle-current" href="#">перевернутый треугольник</a>
+                            <a class="results-filters-link-triangle-current" href="#">выдача результатов по убыванию</a>
                         </li>
                     </ul>
-                </div>  
+                </section>  
             </section> 
-            <section class="amara-resort">  
-                <h2 class="visually-hidden">Результаты поиска гостиниц в Седоне</h2>
-                <p>
-                    <img src="img/catalog/amara-resort.jpeg" width="135" height="90" alt="Фото гостиницы">
-                </p>  
-                <ul>
-                    <li>
-                        <h3>Amara resort & spa</h3>
-                        <p>
-                            <span>Гостиница</span> 
-                            <span>от 4000 Р.</span>
-                            <a class="button-blue" href="#">Подробнее</a>
-                            <a class="button-brown" href="#">Забронировать</a>
-                        </p>
-                    </li>
-                </ul>
-                <div class="amara-resort-raiting">
-                    <p>Звездочки</p>
-                    <p>Рейтинг:8,5</p>
-                </div>
-            </section>
-            <section class="desert-quail"> 
-                <p>
-                    <img src="img/catalog/desert-quail.jpeg" width="135" height="90" alt="Фото мотеля">
-                </p>
-                <ul>
-                    <li>
-                        <h3>Desert Quail Inn</h3>
-                        <p>
-                            <span>Мотель</span> 
-                            <span>от 3000 Р.</span>
-                            <a class="button-blue" href="#">Подробнее</a>
-                            <a class="button-brown" href="#">Забронировать</a>
-                        </p>
-                    </li>
-                </ul>
-                <div class="desert-quail-raiting">
-                    <p>Звездочки</p>
-                    <p>Рейтинг:8,9</p>
-                </div>
-            </section>
-            <section class="villas-at-poco">
-                <p>
-                    <img src="img/catalog/villas-at-poco.jpeg" width="135" height="90" alt="Фото апартаментов">
-                </p>
-                <ul>
-                    <li>
-                        <h3>Villas at Poco Diablo</h3>
-                        <p>
-                            <span>Апартаменты</span>
-                            <span>от 2000 Р.</span>
-                            <a class="button-blue" href="#">Подробнее</a>
-                            <a class="button-brown" href="#">Забронировать</a>
-                        </p>
-                    </li>
-                </ul>
-                <div class="villas-at-poco-raiting">
-                    <p>Звездочки</p>
-                    <p>Рейтинг:9,2</p>
-                </div>   
-            </section>
+            <article class="hotels-search-results">  
+                <h1 class="visually-hidden">Результаты поиска гостиниц в Седоне</h1>
+                <article class="hotel-description">
+                    <img src="img/catalog/amara-resort.jpg" width="135" height="90" alt="Фото гостиницы">
+                    <h2 class="hotel-name">Amara resort & spa</h2>
+                    <p>
+                        <span>Гостиница</span> 
+                        <span>от 4000 Р.</span>
+                    </p>
+                    <p>
+                        <a class="button-blue" href="#">Подробнее</a>
+                        <a class="button-brown"  href="#">Забронировать</a>
+                    </p>
+                    <p class="stars">Звездочки</p>
+                    <p class="raiting">Рейтинг:8,5</p>
+                </article> 
+                <article class="hotel-description"> 
+                    <img src="img/catalog/desert-quail.jpg" width="135" height="90" alt="Фото мотеля">
+                    <h2 class="hotel-name">Desert Quail Inn</h2>
+                    <p>
+                        <span>Мотель</span> 
+                        <span>от 3000 Р.</span>
+                    </p>
+                    <p>
+                        <a class="button-blue" href="#">Подробнее</a>
+                        <a class="button-brown" href="#">Забронировать</a>
+                    </p>
+                    <p class="stars">Звездочки</p>
+                    <p class="raiting">Рейтинг:8,9</p>
+                </article>
+                <article class="hotel-description">
+                    <img src="img/catalog/villas-at-poco.jpg" width="135" height="90" alt="Фото апартаментов">
+                    <h2 class="hotel-name">Villas at Poco Diablo</h2>
+                    <p>
+                        <span>Апартаменты</span>
+                        <span>от 2000 Р.</span>
+                    </p>
+                    <p>
+                        <a class="button-blue" href="#">Подробнее</a>
+                        <a class="button-brown" href="#">Забронировать</a>
+                    </p>
+                    <p class="stars">Звездочки</p>
+                    <p class="raiting">Рейтинг:9,2</p>
+                </article>
+            </article>
         </main>
         <footer class="main-footer">
             <p class="footer-hashtag">
@@ -165,9 +147,9 @@
             </p>
             <div class="footer-social">
                 <ul>
-                    <li><a class="social-button" href="#">Twitter</a></li>
-                    <li><a class="social-button" href="#">Facebook</a></li>
-                    <li><a class="social-button" href="#">Youtube</a></li>
+                    <li><a class="social-button tw" href="#">Twitter</a></li>
+                    <li><a class="social-button fb" href="#">Facebook</a></li>
+                    <li><a class="social-button yt" href="#">Youtube</a></li>
                 </ul>
             </div>
             <p class="footer-copyright">
