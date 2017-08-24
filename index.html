@@ -3,6 +3,8 @@
     <head>
         <meta charset="utf-8">
         <title>Седона</title>
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+        <link href="css/normalize.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
@@ -13,7 +15,7 @@
                 </a>
             </p>
             <nav class="main-navigation">
-                <ul>
+                <ul class="site-navigation">
                     <li><a class="menu-item" href="info.html">Информация</a></li>
                     <li><a class="menu-item" href="foto.html">Фото и видео</a></li>
                     <li><a class="menu-item" href="maps.html">Карта штата</a></li>
@@ -26,8 +28,8 @@
                 <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
                 <img src="http://placehold.it/150x100" width="1200" height="450" alt="Фото Седоны">
             </section>
-            <section class="about-reasons">
-                <p>
+            <section class="about-sedona">
+                <p class="town">
                 Седона - небольшой городок в Аризоне,<br>
                 заслуживающий большего!
                 </p>
@@ -35,7 +37,7 @@
                 Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
                 </p>
             </section>
-            <section class="reson-one">
+            <section class="reason reason-one">
                 <h2 class="visually-hidden">Причины побывать в Седоне</h2>
                 <h3 class="reason-name-one">Наcтоящий <br> городок</h3>
                 <p class="reson-one">
@@ -43,9 +45,9 @@
                 Седона - не атракцион для туристов,<br>
                 там течет своя жизнь
                 </p>
-                <img src="img/index/sedona-town.jpeg" width="800" height="260" alt="Фото городка Седона">
+                <img src="img/index/sedona-town.jpg" width="800" height="260" alt="Фото городка Седона">
             </section>
-            <section class="recommendation-accommodation">
+            <section class="recommendations accommodation">
                 <h3 class="recommendation-name">Жилье</h3> 
                   <p class="recommendation">
                 Рекомендуем пожить в настоящем<br>
@@ -53,7 +55,7 @@
                   </p>
                   <img src="http://placehold.it/150x100" width="70" height="70" alt="Иконка домик">
             </section> 
-            <section class="recommendation-food">  
+            <section class="recommendations food">  
                 <h3 class="recommendation-name">Еда</h3> 
                   <p class="recommendation">
                   Всегда заказывайте фирменный бургер,<br>
@@ -61,7 +63,7 @@
                   </p>
                   <img src="http://placehold.it/150x100" width="70" height="70" alt="Иконка еда">
             </section>    
-            <section class="recommendation-souvenirs">    
+            <section class="recommendations souvenirs">    
                 <h3 class="recommendation-name">Сувениры</h3> 
                   <p class="recommendation">
                   Не только китайского, но и местного<br>
@@ -69,8 +71,8 @@
                   </p>
                   <img src="http://placehold.it/150x100" width="70" height="70" alt="Иконка сувениры">
             </section>
-            <section class="reson-two">
-                <img src="img/index/bridge.jpeg" width="800" height="260" alt="Фото моста дьявола">
+            <section class="reasons reason-two">
+                <img src="img/index/bridge.jpg" width="800" height="260" alt="Фото моста дьявола">
                 <h3 class="reason-name-two">Там есть <br> мост дьявола</h3>
                 <p class="reson-two">
                     <span class="reason-number">-2-</span>
@@ -78,7 +80,7 @@
                 вы осмелитесь
                 </p>
             </section>
-            <section class="reason-three">
+            <section class="reasons reason-three">
                 <h3 class="reason-name">Небольшая <br> площадь</h3>
                 <p class="reson">
                     <span class="reason-number">-3-</span>
@@ -86,7 +88,7 @@
                 находятся очень близко
                 </p>
             </section>
-            <section class="reason-four">        
+            <section class="reasons reason-four">        
                 <h3 class="reason-name">Красивая <br> дорога</h3>
                 <p class="reson">
                     <span class="reason-number">-4-</span>
@@ -94,7 +96,7 @@
                 не скучно!
                 </p>
             </section>
-            <section class="reason-five">         
+            <section class="reasons reason-five">         
                 <h3 class="reason-name">Мало <br> туристов</h3>
                 <p class="reson">
                     <span class="reason-number">-5-</span>
@@ -102,7 +104,7 @@
                 толпится там
                 </p>
             </section>
-            <section class="hotel-search-and-map">
+            <section class="hotel-search">
                 <p>
                     <b>Заинтересовались?</b>
                 Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостинец в Седоне
@@ -110,10 +112,10 @@
                 <button class="button-hotel-search" type="button">Поиск гостиницы в Седоне</button>
                 <form class="hotel-search" action="#" method="get">
                     <label class="hotel-search">Дата заезда
-                        <input type="date" name="date-from" placeholder="24 апреля 2017">
+                        <input type="text" name="date-from" placeholder="24 апреля 2017">
                     </label>
                     <label class="hotel-search">Дата выезда
-                        <input type="date" name="date-to" placeholder="4 июля 2017">
+                        <input type="text" name="date-to" placeholder="4 июля 2017">
                     </label>
                     <label class="adults-form" for="adults">Взрослые:</label>
                     <button class="minus">-</button>
@@ -123,7 +125,7 @@
                     <button class="minus">-</button>
                     <input type="text" name="children-form" id="children" placeholder="0">
                     <button class="plus">+</button>
-                    <input type="submit" value="Найти">
+                    <button class="search" type="button">Найти</button>
                 </form>
                 <p class="map">
                     <img src="http://placehold.it/150x100" width="1200" height="470" alt="Карта">
@@ -142,7 +144,8 @@
                 </ul>
             </div>
             <p class="footer-copyright">
-                <a class="button" href="https://htmlacademy.ru"> website by HTML Academy</a>
+                website by
+                <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
             </p>
         </footer>
   </body>

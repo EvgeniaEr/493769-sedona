@@ -3,6 +3,8 @@
     <head>
         <meta charset="utf-8">
         <title>Седона</title>
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+        <link href="css/normalize.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
@@ -13,11 +15,11 @@
                 </a>
             </p>
             <nav class="main-navigation">
-                <ul>
+                <ul class="site-navigation">
                     <li><a class="menu-item" href="info.html">Информация</a></li>
                     <li><a class="menu-item" href="foto.html">Фото и видео</a></li>
                     <li><a class="menu-item" href="maps.html">Карта штата</a></li>
-                    <li class=class="site-navigation-current"><a class="menu-item" href="hotels.html">Гостиницы</a></li>
+                    <li class="menu-item-current"><a href="hotels.html">Гостиницы</a></li>
                 </ul>
             </nav>
         </header>
@@ -28,37 +30,37 @@
                 <form class="filter" method="get" action="#">
                     <fieldset class="infrastructure">
                         <legend>Инфраструктура</legend>
-                        <ul>
-                            <li class="filter-option">
+                        
+                            <p class="filter-option">
                                 <label for="pool">Бассейн</label>
                                 <input class="filter-input-checkbox" type="checkbox" name="pool" id="pool" checked>
-                            </li>
-                            <li class="filter-option">
+                            </p>
+                            <p class="filter-option">
                                 <label for="рarking-place">Парковка</label>
                                 <input class="filter-input-checkbox" type="checkbox" name="рarking-place" id="рarking-place">
-                            </li>
-                            <li class="filter-option">
+                            </p>
+                            <p class="filter-option">
                                 <label for="wi-fi">Wi-Fi</label>
                                <input class="filter-input-checkbox" type="checkbox" name="wi-fi" id="wi-fi">
-                            </li>
-                        </ul>
+                            </p>
+                        
                     </fieldset>
                     <fieldset class="type of accommodation">
                         <legend>Тип жилья</legend>
-                        <ul>
-                            <li class="filter-option">
+                        
+                            <p class="filter-option">
                                 <label for="hotel">Гостиница</label>
                                 <input class="filter-input-checkbox" type="checkbox" name="hotel" id="hotel" checked>
-                            </li>
-                            <li class="filter-option">
+                            </p>
+                            <p class="filter-option">
                                 <label for="motel">Мотель</label>
                                 <input class="filter-input-checkbox" type="checkbox" name="motel" id="motel" checked>
-                            </li>
-                            <li class="filter-option">
+                            </p>
+                            <p class="filter-option">
                                 <label for="apartments">Апартаменты</label>
                                 <input class="filter-input-checkbox" type="checkbox" name="apartments" id="apartments" checked>
-                            </li>
-                        </ul>
+                            </p>
+                        
                     </fieldset>
                     <fieldset class="filter-price-from-to">
                         <legend>Стоимость в сутки(Р):</legend>
@@ -67,14 +69,16 @@
                         </label>
                         <label> До 3000
                             <input class="filter-price" type="text" name="filter-price-to">
-                         </label>
-                         <button class="button-filter-price-from-to" type="button">Показать</button>
+                        </label>
+                        <p>
+                            <button class="button-filter" type="button">Показать</button>
+                        </p>
                     </fieldset>
                 </form>
             </section>
             <section class="results-filters">
-                <span>Найдено:3</span>
-                <span>Сортировка:</span>
+                <span class="resuls">Найдено:3</span>
+                <span class="sorting">Сортировка:</span>
                 <section class="results-filters-list">
                     <ul>
                         <li>
@@ -99,42 +103,48 @@
                 <h1 class="visually-hidden">Результаты поиска гостиниц в Седоне</h1>
                 <article class="hotel-description">
                     <img src="img/catalog/amara-resort.jpg" width="135" height="90" alt="Фото гостиницы">
-                    <h2 class="hotel-name">Amara resort & spa</h2>
+                    <p class="title">
+                        <a class="hotel-name" href="#">Amara resort & spa</a>
+                    </p>
                     <p>
                         <span>Гостиница</span> 
                         <span>от 4000 Р.</span>
                     </p>
-                    <p>
-                        <a class="button-blue" href="#">Подробнее</a>
-                        <a class="button-brown"  href="#">Забронировать</a>
+                    <p class="two-buttons">
+                        <a class="read-more" href="#">Подробнее</a>
+                        <a class="book-it"  href="#">Забронировать</a>
                     </p>
                     <p class="stars">Звездочки</p>
                     <p class="raiting">Рейтинг:8,5</p>
                 </article> 
                 <article class="hotel-description"> 
                     <img src="img/catalog/desert-quail.jpg" width="135" height="90" alt="Фото мотеля">
-                    <h2 class="hotel-name">Desert Quail Inn</h2>
+                    <p class="title">
+                        <a class="hotel-name" href="#">Desert Quail Inn</a>
+                    </p>
                     <p>
                         <span>Мотель</span> 
                         <span>от 3000 Р.</span>
                     </p>
-                    <p>
-                        <a class="button-blue" href="#">Подробнее</a>
-                        <a class="button-brown" href="#">Забронировать</a>
+                    <p class="two-buttons">
+                        <a class="read-more" href="#">Подробнее</a>
+                        <a class="book-it" href="#">Забронировать</a>
                     </p>
                     <p class="stars">Звездочки</p>
                     <p class="raiting">Рейтинг:8,9</p>
                 </article>
                 <article class="hotel-description">
                     <img src="img/catalog/villas-at-poco.jpg" width="135" height="90" alt="Фото апартаментов">
-                    <h2 class="hotel-name">Villas at Poco Diablo</h2>
+                    <p class="title">
+                        <a class="hotel-name" href="#">Villas at Poco Diablo</a>
+                    </p>
                     <p>
                         <span>Апартаменты</span>
                         <span>от 2000 Р.</span>
                     </p>
-                    <p>
-                        <a class="button-blue" href="#">Подробнее</a>
-                        <a class="button-brown" href="#">Забронировать</a>
+                    <p class="two-buttons">
+                        <a class="read-more" href="#">Подробнее</a>
+                        <a class="book-it" href="#">Забронировать</a>
                     </p>
                     <p class="stars">Звездочки</p>
                     <p class="raiting">Рейтинг:9,2</p>
