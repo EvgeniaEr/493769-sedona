@@ -1,0 +1,353 @@
+body {
+    margin: 0;
+    padding: 0;
+
+	font-family: "PT Sans Regular", "Arial" sans-serif;
+	font-size: 14рх;
+	line-height: 21px;
+	font-weight: 400;
+	color: rgb(51, 51, 51);
+	text-transform: uppercase;
+	text-align: center;
+
+	background-color: rgb(255, 255, 255);
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-navigation {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+
+    background-color: rgb(255, 255, 255);
+}
+
+.site-navigation {
+    list-style: none;
+}
+
+.site-navigation a {
+   color: rgb(0, 0, 0);
+}
+
+
+.site-navigation a:hover {
+	color: rgb(129, 179, 210);
+}
+
+.site-navigation a:focus {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.menu-item-current {
+	color: rgb(118, 99, 87);
+}
+
+.sedona-foto {
+	background-image: url("img/index/background.jpg");
+    background-color: rgb(129, 179, 210);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.town {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+}
+
+.reasons h3 {
+	font-size: 21px;
+    line-height: 21px;
+    font-weight: 700;
+}
+
+.reason-one,
+.reason-two {
+	color: rgb(255, 255, 255);
+	background-color: rgb(129, 179, 210);
+}
+
+.reason-three,
+.reason-four,
+.reason-five {
+	color: rgb(0, 0, 0);
+	background-color: rgb(238, 238, 238)
+}
+
+.recommendations h3 {
+	font-size: 21px;
+    line-height: 21px;
+    font-weight: 700;
+	color: rgb(0, 0, 0);
+}
+
+.hotel-search b {
+	font-size: 30px;
+    line-height: 36px;
+    font-weight: 700px;
+	color: rgb(0, 0, 0);
+}
+
+.hotel-search p {
+	line-height: 24px;
+}
+
+.hotel-search button {
+	font: inherit;
+
+    font-size: 21рх;
+	line-height: 26px;
+	font-weight: 700;
+    color: rgb(255, 255, 255);
+    vertical-align: middle;
+    
+    border: none;
+}
+
+.button-hotel-search {
+    background-color: rgb(118, 99, 87);
+}
+
+.button-hotel-search:hover {
+	background-color: rgb(96, 78, 67);
+} 
+
+.button-hotel-search:active {
+	background-color: rgb(80, 62, 51);
+}
+
+.search {
+    background-color: rgb(129, 179, 210);
+}
+
+.search:hover {
+    background-color: rgb(102, 158, 192);
+}
+
+.search:active {
+    background-color: rgb(84, 150, 189);
+}
+
+.hotel-search input {
+    font: inherit;
+    line-height: 26px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+
+    border: 2px solid rgb(229, 229, 229);
+}
+
+.hotel-search input[type="text"] {
+	font: inherit;
+	line-height: 26px;
+	font-weight: 700;
+    color: rgb(0, 0, 0);
+
+	background-color: rgb(242, 242, 242);
+}
+
+.hotel-search input[type="text"]:hover {
+    font: inherit;
+    font-weight: 700;
+    line-height: 26px;
+    color: rgb(0, 0, 0);
+
+    background-color: rgb(235, 235, 235);
+}
+
+.hotel-search input[type="text"]:active {
+    font: inherit;
+    line-height: 26px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+
+    background-color: rgb(255, 255, 255);
+}
+
+.main-footer {
+    line-height: 26px;
+    color: rgba(0, 0, 0);
+}
+
+.footer-social ul {
+   list-style: none;
+}
+
+.social-button {
+   color: rgb(255, 255, 255);
+
+   background-color: rgb(129, 179, 210);
+}
+
+.footer-hashtag a {
+	font-size: 21рх;
+	font-weight: 700;
+	color: rgba(0, 0, 0);
+}
+
+.footer-hashtag a:hover {
+	color: rgba(0, 0, 0);
+}
+
+.footer-hashtag a:focus {
+	color: rgba(0, 0, 0);
+}
+
+
+.filters {
+    color: rgb(255, 255, 255);
+
+    background-color: rgb(129, 179, 210);
+    background-image: url("img/catalog/background-catalog.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.filter fieldset{
+	border: transparent;
+}
+
+.filter legend {
+    font: inherit;
+    line-height: 26px;
+    font-weight: 700;
+}
+
+.filter input:hover,
+.filter input:focus {
+    color: rgb(129, 179, 210);
+}
+
+.filter input:disabled {
+   color: rgb(106, 106, 106);
+}
+
+.filter input[type="text"] {
+	font: inherit;
+	color: rgb(255, 255, 255);
+	text-transform: uppercase;
+
+	background-color: transparent;
+	border: 2px solid rgb(255, 255, 255);
+}
+
+.button-filter {
+	font: inherit;
+	color: rgb(255, 255, 255);
+
+    background-color: transparent;
+	border: 2px solid rgb(255, 255, 255);
+}
+
+.button-filter:hover,
+.button-filter:focus {
+	color: rgb(0, 0, 0);
+
+	background-color: rgb(255, 255, 255);
+}
+
+.results-filters{
+    color: rgb(0, 0, 0);
+}
+
+.resuls {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+}
+
+.sorting {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.results-filters-list ul {
+	list-style: none;
+}
+
+.results-filters-link a {
+	font-size: 12px;
+	line-height: 18px;
+	text-decoration: none;
+	color: rgba(0, 0, 0, 0.5);
+	border-bottom: 1px dotted rgba(0, 0, 0, 0.5);
+}
+
+.results-filters-link a:hover {
+	text-decoration: none;
+	color: rgb(129, 179, 210);
+	border-bottom: 1px dotted rgba(129, 179, 210, 0.5);
+}
+
+.results-filters-link a:focus {
+	color: rgb(0, 0, 0);
+}
+
+.hotels-search-results {
+	font: inherit;
+}
+
+.title {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+	color: rgb(0, 0, 0);
+}
+
+.title a {
+    color: rgb(0, 0, 0);
+}
+
+.title a:hover {
+    color: rgb(129, 179, 210);
+}
+
+.title a:focus {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.two-buttons {
+	font-weight: 700;
+}
+
+.read-more {
+	color: rgb(255, 255, 255);
+	background-color: rgb(118, 99, 87);
+}
+
+.read-more:hover {
+	color: rgb(255, 255, 255);
+    background-color: rgb(102, 158, 192);
+}
+}
+
+.read-more:focus {
+	color: rgba(255, 255, 255, 0.5);
+	background-color: rgb(84, 150, 189);
+}
+
+.book-it {
+	color: rgb(255, 255, 255);
+    background-color: rgb(129, 179, 210);
+}
+
+.book-it:hover {
+	color: rgb(255, 255, 255);
+	background-color: rgb(96, 78, 67);
+
+.book-it:focus {
+	color: rgba(255, 255, 255, 0.5);
+	background-color: rgb(80, 62, 51);
+}
+
+.raiting {
+	color: rgb(102, 102, 102);
+	background-color: rgb(242, 242, 242);
+}
+

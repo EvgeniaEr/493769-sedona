@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="ru">
 <html>
     <head>
         <meta charset="utf-8">
@@ -26,7 +27,7 @@
         <main class="main-content-index">
             <section class="sedona-foto">
                 <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
-                <img src="http://placehold.it/150x100" width="1200" height="450" alt="Фото Седоны">
+                <p class="visually-hidden">Фото Седоны</p>
             </section>
             <section class="about-sedona">
                 <p class="town">
@@ -41,7 +42,7 @@
                 <h2 class="visually-hidden">Причины побывать в Седоне</h2>
                 <h3 class="reason-name-one">Наcтоящий <br> городок</h3>
                 <p class="reson-one">
-                    <span class="reason-number">-1-</span>
+                    <p class="reason-number">-1-</p>
                 Седона - не атракцион для туристов,<br>
                 там течет своя жизнь
                 </p>
@@ -75,7 +76,7 @@
                 <img src="img/index/bridge.jpg" width="800" height="260" alt="Фото моста дьявола">
                 <h3 class="reason-name-two">Там есть <br> мост дьявола</h3>
                 <p class="reson-two">
-                    <span class="reason-number">-2-</span>
+                    <p class="reason-number">-2-</p>
                 Да, по нему можно пройти! Если конечно<br>
                 вы осмелитесь
                 </p>
@@ -83,7 +84,7 @@
             <section class="reasons reason-three">
                 <h3 class="reason-name">Небольшая <br> площадь</h3>
                 <p class="reson">
-                    <span class="reason-number">-3-</span>
+                    <p class="reason-number">-3-</p>
                 Все достопримечательности<br>
                 находятся очень близко
                 </p>
@@ -91,7 +92,7 @@
             <section class="reasons reason-four">        
                 <h3 class="reason-name">Красивая <br> дорога</h3>
                 <p class="reson">
-                    <span class="reason-number">-4-</span>
+                    <p class="reason-number">-4-</p>
                 Ехать в Седону из Лас-Вегаса совсем<br>
                 не скучно!
                 </p>
@@ -99,32 +100,38 @@
             <section class="reasons reason-five">         
                 <h3 class="reason-name">Мало <br> туристов</h3>
                 <p class="reson">
-                    <span class="reason-number">-5-</span>
+                    <p class="reason-number">-5-</p>
                 Большинство едет в Гранд Каньон и<br>
                 толпится там
                 </p>
             </section>
             <section class="hotel-search">
                 <p>
-                    <b>Заинтересовались?</b>
+                    <b>Заинтересовались?</b><br>
                 Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостинец в Седоне
                 </p>
                 <button class="button-hotel-search" type="button">Поиск гостиницы в Седоне</button>
                 <form class="hotel-search" action="#" method="get">
-                    <label class="hotel-search">Дата заезда
-                        <input type="text" name="date-from" placeholder="24 апреля 2017">
-                    </label>
-                    <label class="hotel-search">Дата выезда
-                        <input type="text" name="date-to" placeholder="4 июля 2017">
-                    </label>
-                    <label class="adults-form" for="adults">Взрослые:</label>
-                    <button class="minus">-</button>
-                    <input type="text" name="adults-form" id="adults" placeholder="2">
-                    <button class="plus">+</button>
-                    <label class="children-form" for="children">Дети:</label>
-                    <button class="minus">-</button>
-                    <input type="text" name="children-form" id="children" placeholder="0">
-                    <button class="plus">+</button>
+                    <p>
+                        <label class="hotel-search">Дата заезда
+                            <input type="text" name="date-from" placeholder="24 апреля 2017">
+                        </label>
+                    </p>
+                    <p>
+                        <label class="hotel-search">Дата выезда
+                            <input type="text" name="date-to" placeholder="4 июля 2017">
+                        </label>
+                    </p>
+                    <p>
+                        <label class="adults-form" for="adults">Взрослые:</label>
+                        <button class="minus">-</button>
+                        <input type="text" name="adults-form" id="adults" placeholder="2">
+                        <button class="plus">+</button>
+                        <label class="children-form" for="children">Дети:</label>
+                        <button class="minus">-</button>
+                        <input type="text" name="children-form" id="children" placeholder="0">
+                        <button class="plus">+</button>
+                    </p>
                     <button class="search" type="button">Найти</button>
                 </form>
                 <p class="map">
