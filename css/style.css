@@ -78,10 +78,16 @@ a {
 	background-color: rgb(129, 179, 210);
 }
 
-.reason-three,
-.reason-four,
-.reason-five {
+.reason-three h3,
+.reason-four h3,
+.reason-five h3 {
 	color: rgb(0, 0, 0);
+	background-color: rgb(238, 238, 238)
+}
+.reason-three p,
+.reason-four p,
+.reason-five p {
+	color: rgb(51, 51, 51);
 	background-color: rgb(238, 238, 238)
 }
 
@@ -111,32 +117,45 @@ a {
 	font-weight: 700;
     color: rgb(255, 255, 255);
     vertical-align: middle;
+    text-transform: uppercase;
     
     border: none;
 }
 
 .button-hotel-search {
-    background-color: rgb(118, 99, 87);
+	background-color: rgb(118, 99, 87);
+    width: 570px;
+    height: 90px;
 }
 
 .button-hotel-search:hover {
 	background-color: rgb(96, 78, 67);
+	width: 570px;
+    height: 90px;
 } 
 
 .button-hotel-search:active {
 	background-color: rgb(80, 62, 51);
+	width: 570px;
+    height: 90px;
 }
 
 .search {
-    background-color: rgb(129, 179, 210);
+	background-color: rgb(129, 179, 210);
+    width: 430px;
+    height: 60px;
 }
 
 .search:hover {
-    background-color: rgb(102, 158, 192);
+	background-color: rgb(102, 158, 192);
+    width: 430px;
+    height: 60px;
 }
 
 .search:active {
-    background-color: rgb(84, 150, 189);
+	background-color: rgb(84, 150, 189);
+    width: 430px;
+    height: 60px;
 }
 
 .hotel-search input {
@@ -152,6 +171,7 @@ a {
 	font: inherit;
 	line-height: 26px;
 	font-weight: 700;
+	text-transform: uppercase;
     color: rgb(0, 0, 0);
 
 	background-color: rgb(242, 242, 242);
@@ -161,6 +181,7 @@ a {
     font: inherit;
     font-weight: 700;
     line-height: 26px;
+    text-transform: uppercase;
     color: rgb(0, 0, 0);
 
     background-color: rgb(235, 235, 235);
@@ -170,6 +191,7 @@ a {
     font: inherit;
     line-height: 26px;
     font-weight: 700;
+    text-transform: uppercase;
     color: rgb(0, 0, 0);
 
     background-color: rgb(255, 255, 255);
@@ -180,20 +202,10 @@ a {
     color: rgba(0, 0, 0);
 }
 
-.footer-social ul {
-   list-style: none;
-}
-
-.social-button {
-   color: rgb(255, 255, 255);
-
-   background-color: rgb(129, 179, 210);
-}
-
 .footer-hashtag a {
+	color: rgba(0, 0, 0);
 	font-size: 21рх;
 	font-weight: 700;
-	color: rgba(0, 0, 0);
 }
 
 .footer-hashtag a:hover {
@@ -204,12 +216,24 @@ a {
 	color: rgba(0, 0, 0);
 }
 
+.footer-social ul {
+   list-style: none;
+}
+
+.social {
+    background-color: rgb(129, 179, 210);
+    width: 45px;
+    height: 50px;
+    border: none;
+}
+
+
 
 .filters {
     color: rgb(255, 255, 255);
 
     background-image: url("../img/catalog/background-catalog.jpg");
-    height: 210px;
+    min-height: 210px;
     background-color: rgb(129, 179, 210);
     background-position: center;
     background-repeat: no-repeat;
@@ -225,16 +249,16 @@ a {
     font-weight: 700;
 }
 
-.filter input:hover,
+.filter-option input:hover,
 .filter input:focus {
     color: rgb(129, 179, 210);
 }
 
-.filter input:disabled {
+.filter-option input:disabled {
    color: rgb(106, 106, 106);
 }
 
-.filter input[type="text"] {
+.filter-option input[type="text"] {
 	font: inherit;
 	color: rgb(255, 255, 255);
 	text-transform: uppercase;
@@ -248,6 +272,8 @@ a {
 	color: rgb(255, 255, 255);
 
     background-color: transparent;
+    width: 135px;
+    height: 30px;
 	border: 2px solid rgb(255, 255, 255);
 }
 
@@ -319,37 +345,53 @@ a {
 }
 
 .two-buttons {
+	/*font-size: 14px;
+	line-height: 21px;*/
 	font-weight: 700;
+
+	border: none;
 }
 
 .read-more {
 	color: rgb(255, 255, 255);
 	background-color: rgb(118, 99, 87);
+	width: 110px;
+	height: 25px;
 }
 
 .read-more:hover {
 	color: rgb(255, 255, 255);
     background-color: rgb(102, 158, 192);
-}
+    width: 110px;
+	height: 25px;
 }
 
 .read-more:focus {
 	color: rgba(255, 255, 255, 0.5);
 	background-color: rgb(84, 150, 189);
+	width: 110px;
+	height: 25px;
 }
 
 .book-it {
 	color: rgb(255, 255, 255);
     background-color: rgb(129, 179, 210);
+    width: 140px;
+	height: 25px;
 }
 
 .book-it:hover {
 	color: rgb(255, 255, 255);
 	background-color: rgb(96, 78, 67);
+	width: 140px;
+	height: 25px;
+}
 
 .book-it:focus {
 	color: rgba(255, 255, 255, 0.5);
 	background-color: rgb(80, 62, 51);
+	width: 140px;
+	height: 25px;
 }
 
 .raiting {
