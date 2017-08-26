@@ -17,6 +17,10 @@ a {
     text-decoration: none;
 }
 
+.visually-hidden {
+	visibility: hidden;
+}
+
 .main-navigation {
     font-size: 14px;
     line-height: 26px;
@@ -48,7 +52,8 @@ a {
 }
 
 .sedona-foto {
-	background-image: url("img/index/background.jpg");
+    background-image: url("../img/index/backgraund.jpg");
+    height: 500px;
     background-color: rgb(129, 179, 210);
     background-position: center;
     background-repeat: no-repeat;
@@ -203,8 +208,9 @@ a {
 .filters {
     color: rgb(255, 255, 255);
 
+    background-image: url("../img/catalog/background-catalog.jpg");
+    height: 210px;
     background-color: rgb(129, 179, 210);
-    background-image: url("img/catalog/background-catalog.jpg");
     background-position: center;
     background-repeat: no-repeat;
 }
