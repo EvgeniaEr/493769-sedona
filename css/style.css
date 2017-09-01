@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
 
-	font-family: "PT Sans Regular", "Arial" sans-serif;
+	font-family: "PT Sans Regular", "Arial", sans-serif;
 	font-size: 14рх;
 	line-height: 21px;
 	font-weight: 400;
@@ -18,7 +18,14 @@ a {
 }
 
 .visually-hidden {
-	visibility: hidden;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
 }
 
 
@@ -53,8 +60,8 @@ a {
 }
 
 .banner-index {
-    background-image: url("../img/index/banner-img-and-mask.jpg");
-    min-height: 500px;
+    background-image: url("../img/banner-img-and-mask.jpg");
+    min-height: 632px;
     background-color: rgb(129, 179, 210);
     background-position: center;
     background-repeat: no-repeat;
@@ -233,8 +240,8 @@ a {
 .filters {
     color: rgb(255, 255, 255);
 
-    background-image: url("../img/catalog/background-catalog.jpg");
-    min-height: 210px;
+    background-image: url("../img/background-catalog.jpg");
+    min-height: 217px;
     background-color: rgb(129, 179, 210);
     background-position: center;
     background-repeat: no-repeat;
@@ -395,6 +402,34 @@ a {
 	height: 25px;
 }
 
+.row-one-stars {
+    background: url("../img/star.svg");
+    
+    background-position: right;
+    background-repeat: repeat-x;
+    width: 72px;
+    height: 17px;
+
+}
+
+.row-two-stars {
+    background: url("../img/star.svg");
+    
+    background-position: right;
+    background-repeat: repeat-x;
+    width: 52px;
+    height: 17px;
+}
+
+.row-three-stars {
+	background: url("../img/star.svg");
+    
+    background-position: right;
+    background-repeat: repeat-x;
+    width: 34px;
+    height: 17px;
+}
+
 .raiting {
 	color: rgb(102, 102, 102);
 	background-color: rgb(242, 242, 242);
@@ -463,7 +498,7 @@ a {
 	padding: 0;
 }
 
-.content-img img {
+/*.content-img img {
 	padding: 0;
 	margin-top: 0px;
 	margin-bottom: 60px;
@@ -471,7 +506,7 @@ a {
 
 .banner-mask-img img {
     margin: 0;
-	padding: 0;
+	padding: 0;*/
 }
 
 .about-sedona{
@@ -555,7 +590,7 @@ a {
 	min-height: 470px;
     margin: 0;
 
-    background-image: url("../img/index/map.jpg");
+    background-image: url("../img/map.jpg");
 }
 
 .hotel-search-form {
@@ -638,6 +673,7 @@ a {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
+	min-height: 72px;
 	margin: 0;
 	padding: 0;
 }
