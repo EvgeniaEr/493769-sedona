@@ -4,19 +4,30 @@ body {
 
 	font-family: "PT Sans Regular", "Arial", sans-serif;
 	font-size: 14рх;
-	line-height: 21px;
+	line-height: 18px;
 	font-weight: 400;
 	color: rgb(51, 51, 51);
 	text-transform: uppercase;
 	text-align: center;
 
-	background-color: rgb(255, 255, 255);
+	background-color: rgb(242, 242, 242);
 }
 
 a {
     text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  /*height: auto;*/
+  margin: 0;
+  padding: 0;
+}
+
+.conteiner {
+    width: 1200px;
+    margin: 0 auto;
+}
 .visually-hidden {
 	position: absolute;
 	width: 1px;
@@ -28,10 +39,20 @@ a {
 	overflow: hidden;
 }
 
+/*index*/
+/*header*/
+.main-logo {
+    width: 138px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  } 
 
 .main-navigation {
     font-size: 14px;
-    line-height: 26px;
+    line-height: 18px;
     font-weight: 700;
     color: rgb(0, 0, 0);
 
@@ -39,7 +60,29 @@ a {
 }
 
 .main-navigation-list {
-    list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin: 0, 6%;
+	padding: 0;
+	font-size: 0;
+	list-style: none;
+}
+
+.main-navigation-list li {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 14px;
+	width: 20%;
+    padding-top: 16px;
+    padding-bottom: 22px;
+    /*height: 56px;*/
+}
+
+.main-navigation-list li:nth-child(2) {
+	margin-right: 20%;
 }
 
 .main-navigation-list a {
@@ -59,12 +102,47 @@ a {
 	color: rgb(118, 99, 87);
 }
 
+/*main*/
+.main-content-index {
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+}
+
 .banner-index {
-    background-image: url("../img/banner-img-and-mask.jpg");
+	
+    background-image: url("../img/background-index.jpg");
     min-height: 632px;
     background-color: rgb(129, 179, 210);
     background-position: center;
     background-repeat: no-repeat;
+    margin: 0;
+	padding: 0;
+}
+
+.banner-index::after {
+	content: "";
+  
+  position: absolute;
+  top: 502px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+    
+  width: 1200px;
+  height: 57px;
+  
+  background-image: url("../img/banner-mask.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  
+  opacity: 1;
+}
+}
+
+.about-sedona {
+    min-height: 211px;
+	margin: 0;
+	padding: 0;
 }
 
 .town {
@@ -72,45 +150,143 @@ a {
     line-height: 26px;
     font-weight: 700;
     color: rgb(0, 0, 0);
+    margin: 0;
+    margin-top: -66px;
+    margin-bottom: 30px;
 }
 
-.reasons h3 {
-	font-size: 21px;
-    line-height: 21px;
-    font-weight: 700;
+.five-reasons {
+	margin: 0;
+	margin-bottom: 57px;
 }
 
-.reason-one,
-.reason-two {
-	color: rgb(255, 255, 255);
+.reason-long-block {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	min-height: 256px;
 	background-color: rgb(129, 179, 210);
+	
+}	
+
+.reason-content-block {
+	margin: 0;
+	padding: 0;
+	width: 33%;
+    
+ }
+
+.reason-img-block {
+	margin: 0;
+	padding: 0;
+	width: 66%;
 }
 
-.reason-three h3,
-.reason-four h3,
-.reason-five h3 {
+.reasons-row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 256px;
+    background-color: rgb(238, 238, 238);
+}
+
+.reason-white {
+	color: rgb(255, 255, 255);
+}
+
+.reason-black {
 	color: rgb(0, 0, 0);
-	background-color: rgb(238, 238, 238)
-}
-.reason-three p,
-.reason-four p,
-.reason-five p {
-	color: rgb(51, 51, 51);
-	background-color: rgb(238, 238, 238)
 }
 
-.recommendations h3 {
-	font-size: 21px;
-    line-height: 21px;
+.reason-content-block h3 {
+    font-size: 21px;
+    line-height: 26px;
     font-weight: 700;
-	color: rgb(0, 0, 0);
+
+    margin: 0;
+    margin-top: -10px;
+    margin-bottom: 20px;
 }
 
+.reason-number {
+	margin: 0;
+	margin-bottom: 20px;
+}
+
+.reason-content-block p {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+}
+
+.recommendations-row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 330px;
+	background-color: rgb(255, 255, 255);
+}
+
+.recommendation {
+	width: 33%;
+ }
+
+.recommendation h3 {
+	position: relative;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+.recommendation p {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: rgb(51, 51, 51);
+    margin: 0;
+    margin-bottom: -60px;
+}
+
+.recommendation h3::before {
+	content: "";
+
+  position: absolute;
+  top: -100px;
+  left: 50%;
+
+  width: 80px;
+  height: 80px;
+  margin-left: -35px;
+
+  background-repeat: no-repeat;
+  background-color:  rgb(255, 255, 255);
+}
+
+.recommendation-accommodation h3::before {
+	background-image: url(../img/icon-1.svg);
+}
+
+.recommendation-food h3::before {
+	background-image: url(../img/icon-2.svg);
+}
+
+.recommendation-souvenirs h3::before {
+	background-image: url(../img/icon-3.svg);
+}
+
+
+/*блок вызова выпадающего меню*/
 .hotel-search b {
 	font-size: 30px;
     line-height: 36px;
     font-weight: 700px;
 	color: rgb(0, 0, 0);
+	
 }
 
 .hotel-search p {
@@ -128,6 +304,12 @@ a {
     text-transform: uppercase;
     
     border: none;
+}
+
+.hotel-search-block-one {
+	min-height: 295px;
+	margin: 0;
+	padding: 0;
 }
 
 .button-hotel-search {
@@ -148,6 +330,8 @@ a {
     height: 90px;
 }
 
+
+/*выпадающая форма*/
 .search {
 	background-color: rgb(129, 179, 210);
     width: 430px;
@@ -205,38 +389,124 @@ a {
     background-color: rgb(255, 255, 255);
 }
 
+.hotel-search-form {
+	width: 570px;
+	min-height: 395px;
+	top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+	background-color: rgb(255, 255, 255)
+}
+
+/*footer*/
 .main-footer {
-    line-height: 26px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 120px;
+	margin: 0;
+	padding: 0;
     color: rgba(0, 0, 0);
+    background-color:  rgb(255, 255, 255);
 }
 
 .footer-hashtag a {
-	color: rgba(0, 0, 0);
+	color: rgb(0, 0, 0);
 	font-size: 21рх;
+	line-height: 26px;
 	font-weight: 700;
 }
 
 .footer-hashtag a:hover {
-	color: rgba(0, 0, 0);
+	color: rgb(0, 0, 0);
 }
 
 .footer-hashtag a:focus {
-	color: rgba(0, 0, 0);
+	color: rgb(0, 0, 0);
 }
 
 .footer-social ul {
    list-style: none;
 }
 
+.main-footer-column {
+	width: 33%;
+}
+
+.footer-social-list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+}
+
 .social {
     background-color: rgb(129, 179, 210);
     width: 45px;
-    height: 50px;
-    border: none;
+    height: 45px;
+    border: transparent;
 }
 
+.social-icon {
+	fill: rgb(255, 255, 255);
+}
 
+.social:hover {
+    background-color: rgb(102, 158, 192);
+}
 
+.social:hover .social-icon {
+	fill: rgb(255, 255, 255);
+}
+
+.social:focus {
+	background-color: rgb(84, 150, 189);
+}
+
+.social:focus .social-icon {
+	fill: rgb(136, 182, 209);
+}
+
+.footer-social-list li:nth-child(2) {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.footer-social-list-item buttom
+
+.footer-copyright {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+}
+
+.footer-copyright-content {
+	font-size: 14px;
+	line-height: 26px;
+	margin-right: 8px;
+	margin-top: -20px;
+}
+
+.logo-htmlacademy {
+	fill: rgb(35, 31, 32);
+}
+
+.footer-copyright-link:hover .logo-htmlacademy {
+	fill: rgb(129, 179, 210);
+}
+
+.footer-copyright-link:focus .logo-htmlacademy {
+	fill: rgb(189, 187, 181);
+}
+
+/*catalog*/
+/*фильтры для поиска гостиницы*/
 .filters {
     color: rgb(255, 255, 255);
 
@@ -245,6 +515,14 @@ a {
     background-color: rgb(129, 179, 210);
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.filter {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin: 0;
+	padding: 0;
 }
 
 .filter fieldset{
@@ -266,37 +544,164 @@ a {
    color: rgb(106, 106, 106);
 }
 
-.filter-option input[type="text"] {
-	font: inherit;
-	color: rgb(255, 255, 255);
-	text-transform: uppercase;
+.filter-range {
+  width: 330px;
+  margin: 50px auto; /* для демо */
 
-	background-color: transparent;
-	border: 2px solid rgb(255, 255, 255);
+  color: #ffffff;
+  text-transform: uppercase;
 }
 
-.button-filter {
-	font: inherit;
-	color: rgb(255, 255, 255);
+.filter-range-title {
+  margin-bottom: 9px;
 
-    background-color: transparent;
-    width: 135px;
-    height: 30px;
-	border: 2px solid rgb(255, 255, 255);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
 }
 
-.button-filter:hover,
-.button-filter:focus {
-	color: rgb(0, 0, 0);
+.filter-range-price-controls {
+  position: relative;
+  
+  height: 36px;
+  margin-bottom: 20px;
 
-	background-color: rgb(255, 255, 255);
+  font-size: 0;
+
+  border: 2px solid #ffffff;
+  border-radius: 2px;
 }
 
+.filter-range-price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.filter-range-price-controls label {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.filter-range-price-controls .min-price,
+.filter-range-price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.filter-range-price-controls input {
+  width: 50px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+}
+
+.filter-range-range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.filter-range-range-controls .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.filter-range-range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.filter-range-btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.filter-range-btn-transparent:hover {
+  color: #000000;
+
+  background: #ffffff;
+}
+
+ .filter-infrastructure {
+    width: 142px;
+    margin-left: 73px: 
+    margin-right: 116px;
+}
+
+.filter-type-of-accommodation  {
+   width: 136px;
+}
+
+.filter-range {
+    
+}
+
+/*блок с результатами поиска гостиницы*/
+/*маленький фильтр для результатов поиска*/
 .results-filters{
     color: rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(235, 235, 235);
+    background-color: rgb(255, 255, 255);
 }
 
-.resuls {
+.results {
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: 700;
@@ -329,7 +734,55 @@ a {
 	color: rgb(0, 0, 0);
 }
 
+.results-filters {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	min-height: 72px;
+	margin: 0;
+	padding: 0;
+}
+
+.results-filters-block-one {
+	width: 275px;
+    margin-left: 73px;
+}
+
+.results-filters-block-two {
+    width: 253px;
+}
+
+.results-filters-block-three {
+	width: 527px;
+    margin-right: 73px;
+}
+
+.results-filters-block-two ul {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	min-height: 88px;
+}
+
+.results-filters-block-three ul {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+
+/*карточки отелей*/
 .hotels-search-results {
+	background-color: rgb(255, 255, 255);
+}
+
+.hotel-description {
 	font: inherit;
 }
 
@@ -435,310 +888,33 @@ a {
 	background-color: rgb(242, 242, 242);
 }
 
-
-/*сетки*/
-
-.conteiner {
-    width: 1200px;
-    min-height: 2760px;
-    margin: 0 auto;
-}
-
-
-.main-logo {
-    width: 138px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-  } 
-
-
-.main-navigation-list {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 1200px;
-	min-height: 42px;
-	margin: 0;
-	padding: 0;
-	font-size: 0;
-
-	
-}
-
-.main-navigation-list li {
-	width: 240px;
-    font-size: 14px;
-}
-
-.menu-item-one {
-   
-	
-	
-}
-
-.menu-item-two {
-  
-	
-}
-
-.menu-item-three {
-    
-}
-
-.menu-item-four {
-   
-	
-}
-
-.banner-index {
-	margin: 0;
-	padding: 0;
-}
-
-/*.content-img img {
-	padding: 0;
-	margin-top: 0px;
-	margin-bottom: 60px;
-}
-
-.banner-mask-img img {
-    margin: 0;
-	padding: 0;*/
-}
-
-.about-sedona{
-    margin: 0;
-	width: 1200px;
-	min-height: 211px;
-	text-align: center;
-
-
-}
-
-.reason-one {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-height: 260px;
-	margin: 0;
-	padding: 0;
-}	
-
-.reason-one-column-left {
-    width: 396px;
-    
- }
-
-.reason-one-column-right {
-	margin: 0;
-	padding: 0;
-}
-
-.recommendations-row {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-height: 330px;
-}
-
-.recommendations {
-	width: 396px;
-}
-
-.reasons-row {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-height: 253px;
-	margin: 0;
-	padding: 0;
-}
-
-.reason-three,
-.reason-four,
-.reason-five {
-	width: 396px;
-}
-
-.reason-two {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-height: 260px;
-	margin: 0;
-	padding: 0;
-}
-
-.reason-two-right-column {
-	width: 396px;
-}
-.reason-two-left-column {
-	margin: 0;
-	padding: 0;
-}
-
-.hotel-search-block-one {
-	min-height: 295px;
-	margin: 0;
-	padding: 0;
-}
-
-.hotel-search-block-two {
-	min-height: 470px;
-    margin: 0;
-
-    background-image: url("../img/map.jpg");
-}
-
-.hotel-search-form {
-	width: 570px;
-	min-height: 395px;
-	top: 0;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-
-	background-color: rgb(255, 255, 255)
-}
-
-.main-footer {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-height: 120px;
-	margin: 0;
-	padding: 0;
-}
-
-.main-footer-column {
-	width: 396px;
-}
-
-.footer-social-list {
+.hotel-description {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin: 0;
 	padding: 0;
-}
-
-.footer-social-list-fb {
-	margin-left: 5px;
-	margin-right: 5px;
-}
-
-.footer-copyright {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: 0;
-	padding: 0;
-}
-
-.footer-copyright-content {
-	margin-right: 8px
-}
-
-/*catalog*/
-
-.filter {
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	margin: 0;
-	padding: 0;
-	min-height: 217;
-}
-
- .filter-infrastructure {
-    width: 142px;
-    margin-left: 73px: 
-    margin-right: 116px;
-}
-
-.filter-type-of-accommodation  {
-   width: 136px;
-}
-
-.filter-price-from-to {
-    margin-left: 345px: 
-    margin-right: 73px;
-
-}
-
-.results-filters {
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	min-height: 72px;
-	margin: 0;
-	padding: 0;
-}
-
-.results-filters-block-one {
-	width: 275px;
-    margin-left: 73px;
-}
-
-.results-filters-block-two {
-    width: 253px;
-}
-
-.results-filters-block-three {
-	width: 527px;
-    margin-right: 73px;
-}
-
-.results-filters-block-two ul {
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	min-height: 88px;
-}
-
-.results-filters-block-three ul {
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
-.hotel-description-row-one {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: 0;
-	padding: 0;
-	border-top: 2px solid rgb(235, 235, 235);
-	border-bottom: 2px solid rgb(235, 235, 235);
+	border-bottom: 1px solid rgb(235, 235, 235);
 	min-height: 150px;
 }
 
-.row-one-column-left {
+.hotel-description-img {
 	width: 135px;
     margin-left: 73px;
 }
 
-.row-one-column-center {
+.hotel-description-content {
     width: 261px;
     margin-left: 32px;
     margin-right: 522px;
 }
 
-.row-one-column-right {
+.hotel-description-raiting {
 	width: 111px;
     margin-right: 73px;
 }
 
-.hotel-description-row-two {
+/*.hotel-description-row-two {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -788,6 +964,7 @@ a {
 .row-three-column-right {
 	width: 111px;
     margin-right: 73px;
-}
+}*/
+
 
 
