@@ -16,41 +16,45 @@
                     <img src="img/logo.png" width="140" height="70" alt="Логотип Седона">
                 </a>
             </p>
-            <nav class="main-navigation">
-                <ul class="main-navigation-list">
+            <nav class="site-navigation">
+                <ul class="site-navigation-list">
                     <li><a class="menu-item" href="info.html">Информация</a></li>
-                    <li><a class="menu-item" href="foto.html">Фото и видео</a></li>
-                    <li><a class="menu-item" href="maps.html">Карта штата</a></li>
+                    <li><a class="menu-item menu-item-foto" href="foto.html">Фото и видео</a></li>
+                    <li><a class="menu-item menu-item-maps" href="maps.html">Карта штата</a></li>
                     <li><a class="menu-item" href="catalog.html">Гостиницы</a></li>
                 </ul>
             </nav>
         </header>
         <main class="main-content-index">
-             <section class="banner-index">
-                <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
-            </section>
-            <section class="about-sedona">
-                <p class="town">
-                Седона - небольшой городок в Аризоне,<br>
-                заслуживающий большего!
-                </p>
-                <p class="five-reasons">
-                Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
-                </p>
-            </section>
+            <section class="banner-block"></section>
+                <section class="banner-index">
+                    <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
+                    <img src="img/welcome-to-the-sedona.png" width="458" height="352" alt="Добро пожаловать в Седону">
+                </section>
+                <section class="about-sedona">    
+                     <p class="town">
+                    Седона - небольшой городок в Аризоне,<br>
+                    заслуживающий большего!
+                    </p>
+                    <p class="five-reasons">
+                    Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+                    </p>
+                    
+                </section>
+            </section>               
             <section class="reasons">
                 <h2 class="visually-hidden">Причины побывать в Седоне</h2>
             <section class="reason-long-block">
                     <div class="reason-content-block reason-white">
                     <h3 class="reason-name">Наcтоящий <br> городок</h3>
-                    <p class="reason-number">-1-</p>
+                    <p class="reason-number">&#8212;&#8194;№1&#8194;&#8212;</p>
                     <p class="reason-text">
                     Седона - не атракцион для туристов,<br>
                      там течет своя жизнь
                     </p>
                 </div>
                 <div class="reason-img-block">
-                <img src="img/sedona-town.jpg" width="800" height="260" alt="фото городка Седона">
+                <img src="img/sedona-town.jpg" width="800" height="256" alt="фото городка Седона">
                 </div>
             </section>
             <div class="recommendations-row">
@@ -78,11 +82,11 @@
             </div>
             <section class="reason-long-block">
                 <div class="reason-img-block">
-                <img src="img/bridge.jpg" width="800" height="260" alt="Фото моста дьявола">
+                <img src="img/bridge.jpg" width="800" height="256" alt="Фото моста дьявола">
                 </div>
                 <div class="reason-content-block reason-white">
                 <h3 class="reason-name">Там есть <br> мост дьявола</h3>
-                <p class="reason-number">-2-</p>
+                <p class="reason-number">&#8212;&#8194;№2&#8194;&#8212;</p>
                 <p class="reson-text">
                 Да, по нему можно пройти! Если конечно<br>
                 вы осмелитесь
@@ -92,7 +96,7 @@
             <div class="reasons-row">
             <section class="reason-content-block reason-black">
                 <h3 class="reason-name">Небольшая <br> площадь</h3>
-                <p class="reason-number">-3-</p>
+                <p class="reason-number">&#8212;&#8194;№3&#8194;&#8212;</p>
                 <p class="reason-text">
                 Все достопримеча тельности<br>
                 находятся  очень близко
@@ -100,7 +104,7 @@
             </section>
             <section class="reason-content-block reason-black">        
                 <h3 class="reason-name">Красивая <br> дорога</h3>
-                <p class="reason-number">-4-</p>
+                <p class="reason-number">&#8212;&#8194;№4&#8194;&#8212;</p>
                 <p class="reason-text">
                 Ехать в Седону из Лас-Вегаса совсем<br>
                 не скучно!
@@ -108,7 +112,7 @@
             </section>
             <section class="reason-content-block reason-black">         
                 <h3 class="reason-name">Мало <br> туристов</h3>
-                <p class="reason-number">-5-</p>
+                <p class="reason-number">&#8212;&#8194;№5&#8194;&#8212;</p>
                 <p class="reason-text">
                 Большинство едет в Гранд Каньон и<br>
                 толпится там
@@ -118,13 +122,14 @@
             </section>
             <section class="hotel-search">
                 <div class="hotel-search-block-one">
-                <p>
-                <b>Заинтересовались?</b><br>
-                Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостинец в Седоне
-                </p>
-                <button class="button-hotel-search" type="button">Поиск гостиницы в Седоне</button>
+                <p class="hotel-search-title">Заинтересовались?</p><br>
+                <p class="hotel-search-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+                <a class="hotel-search-button" href="#" type="button">Поиск гостиницы в Седоне</a>
                 </div>
-                <!--<div class="hotel-search-block-two">
+
+
+                <span class="visually-hidden">
+                <div class="hotel-search-block-two">
                 <form class="hotel-search-form" action="#" method="get">
                     <p>
                         <label class="hotel-search">Дата заезда
@@ -148,22 +153,23 @@
                     </p>
                     <button class="search" type="button">Найти</button>
                 </form>
-                </div>-->
-                <p class="map">
-                    <img src="img/map.jpg" width="1200" height="473" alt="Карта Седоны">
-                </p>
+                </div>
+                </span>
+            </section>
+            <section class="map">
+                <img src="img/map.jpg" width="1200" height="594" alt="Карта Седоны">
             </section>
         </main>
-       <footer class="main-footer">
-            <p class="footer-hashtag main-footer-column">
+       <footer class="main-footer site-footer">
+            <p class="footer-hashtag site-footer-column">
                 <a class="hashtag" href="#">#visitsedona</a>
             </p>
-            <div class="footer-social main-footer-column">
+            <div class="footer-social site-footer-column">
                 <ul class="footer-social-list">
                     <li class="footer-social-list-tw">
                         <button class="social" type="button">
                             <span class="visually-hidden">Твиттер</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15"><image overflow="visible" width="17" height="15" xlink:href="t.png"/><path class="social-icon" fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z"/>
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15"><image overflow="visible" width="17" height="15"/><path class="social-icon" fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z"/>
                             </svg>
                         </button>
                     </li>
@@ -177,12 +183,12 @@
                     <li class="footer-social-list-yt">
                         <button class="social" type="button">
                             <span class="visually-hidden">Ютьюб</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16"><image overflow="visible" width="20" height="16" xlink:href="youtube.png"/><path class="social-icon" fill="#FFF" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16"><image overflow="visible" width="20" height="16"/><path class="social-icon" fill="#FFF" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z"/></svg>
                         </button>
                     </li>
                 </ul>
             </div>
-            <div class="footer-copyright main-footer-column">
+            <div class="footer-copyright site-footer-column">
                 <p class="footer-copyright-content">website by</p>
                 <a class="footer-copyright-link" href="https://htmlacademy.ru">
                     <span class="visually-hidden">htmlacademy</span>
