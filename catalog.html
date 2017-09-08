@@ -32,36 +32,37 @@
                 <form class="filter" method="get" action="#">
                     <fieldset class="filter-infrastructure">
                         <legend>Инфраструктура</legend>
-                        
-                            <p class="filter-infrastructure-option">
-                                <input class="filter-input-checkbox" type="checkbox" name="pool" id="pool" checked>
-                                <label for="pool">Бассейн</label>
-                            </p>
-                            <p class="filter-infrastructure-option">
-                                <input class="filter-input-checkbox" type="checkbox" name="рarking-place" id="рarking-place">
-                                <label for="рarking-place">Парковка</label>
-                            </p>
-                            <p class="filter-infrastructure-option">
-                                <input class="filter-input-checkbox" type="checkbox" name="wi-fi" id="wi-fi">
+                        <ul class="filter-column-left">
+                            <li class="filter-infrastructure-option">
+                                <input class="filter-input-checkbox" type="checkbox" name="infrastructure" id="pool" checked>  
+                                <label for="pool">Бассейн</label>                                                           
+                            </li>
+                            <li class="filter-infrastructure-option">
+                                <input class="filter-input-checkbox" type="checkbox" name="infrastructure" id="рarking-place">
+                                 <label for="рarking-place">Парковка</label>
+                            </li>
+                            <li class="filter-infrastructure-option">
+                                <input class="filter-input-checkbox" type="checkbox" name="infrastructure" id="wi-fi">
                                 <label for="wi-fi">Wi-Fi</label>
-                            </p>
-                        
+                            </li>
+                        </ul>
                     </fieldset>
                     <fieldset class="filter-type-of-accommodation">
                         <legend>Тип жилья</legend>
-                        
-                            <p class="filter-type-of-accommodation-option">
-                                <input class="filter-input-checkbox" type="checkbox" name="hotel" id="hotel" checked>
+                        <ul class="filter-column-center">
+                            <li class="filter-type-of-accommodation-option">
+                                <input class="filter-input-checkbox" type="checkbox" name="accommodation" id="hotel" checked>
                                 <label for="hotel">Гостиница</label>
-                            </p>
-                            <p class="filter-type-of-accommodation-option">
-                                <input class="filter-input-checkbox" type="checkbox" name="motel" id="motel" checked>
+                            </li>
+                            <li class="filter-type-of-accommodation-option">
+                                <input class="filter-input-checkbox" type="checkbox" name="accommodation" id="motel" checked>
                                 <label for="motel">Мотель</label>
-                            </p>
-                            <p class="filter-type-of-accommodation-option">
-                                <input class="filter-input-checkbox" type="checkbox" name="apartments" id="apartments" checked>
+                            </li>
+                            <li class="filter-type-of-accommodation-option">
+                                <input class="filter-input-checkbox" type="checkbox" name="accommodation" id="apartments" checked>
                                 <label for="motel">Мотель</label>
-                            </p>
+                            </li>
+                        </ul>
                     </fieldset>
 
                     <fieldset class="filter-range">
@@ -82,17 +83,19 @@
                         </div>
                         <button class="filter-range-btn-transparent" type="submit">Показать</button>
                     </fieldset>
-                </form>
-            </section>
+               </form>
+
+             </section>
+
             <section class="results-filters">
                 <div class="results-filters-block-one">
-                    <span class="results">Найдено:3</span>
-                    <span class="sorting">Сортировка:</span>
+                    <p class="results">Найдено:<span class="results-number">3</span></p>
+                    <p class="sorting">Сортировка:</p>
                 </div>
                 <div class="results-filters-block-two">
-                    <ul class="results-filters-list>
-                        <li  class="results-filters-link">
-                            <a href="#">по цене</a>
+                    <ul class="results-filters-list">
+                        <li>
+                            <a class="results-filters-current">по цене</a>
                         </li>
                         <li  class="results-filters-link">
                             <a href="#">по типу</a>
@@ -105,32 +108,34 @@
                 <div class="results-filters-block-three">
                     <ul class="results-filters-triangular-button">
                         <li>
-                            <a href="#">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/>
+                            <a class="triangular-button" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path class="icon-dir" fill="#231F20" d="M5.5 0L0 10h11z"/>
                                 </svg>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/>
+                            <a class="triangular-button triangular-button-current">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path class="icon-dir" fill="#231F20" d="M5.5 10L0 0h11"/>
                                 </svg>
                             </a>
                         </li>
                     </ul>
                 </div>  
             </section> 
-            <article class="hotels-search-results">  
+
+            <section class="hotels-search-results">  
                 <h1 class="visually-hidden">Результаты поиска гостиниц в Седоне</h1>
+                
                 <article class="hotel-description">
                     <div class="hotel-description-img">
                         <img src="img/amara-resort.jpg" width="135" height="90" alt="Фото гостиницы">
                     </div>
                     <div class="hotel-description-content">
-                        <p class="title">
+                        <p class="hotel-description-title">
                             <a href="#">Amara resort &#38 spa</a>
                         </p>
-                        <p>
-                            <span>Гостиница</span> 
+                        <p class="hotel-description-text text-row-one">
+                            Гостиница 
                             <span>от 4000 Р.</span>
                         </p>
                         <p class="two-buttons">
@@ -142,7 +147,7 @@
                         <p class="stars row-one-stars">
                             <span class="visually-hidden">5 звезд</span>
                         </p>
-                        <p class="raiting">Рейтинг:8,5</p>
+                        <p class="raiting">Рейтинг:&#8194;8,5</p>
                     </div>
                 </article> 
                 <article class="hotel-description"> 
@@ -150,11 +155,11 @@
                         <img src="img/desert-quail.jpg" width="135" height="90" alt="Фото мотеля">
                     </div>
                     <div class="hotel-description-content">
-                        <p class="title">
+                        <p class="hotel-description-title">
                             <a href="#">Desert Quail Inn</a>
                         </p>
-                        <p>
-                            <span>Мотель</span> 
+                        <p class="hotel-description-text text-row-two">
+                            Мотель 
                             <span>от 3000 Р.</span>
                         </p>
                         <p class="two-buttons">
@@ -166,7 +171,7 @@
                         <p class="stars row-two-stars">
                             <span class="visually-hidden">3 звезды</span>
                         </p>
-                        <p class="raiting">Рейтинг:8,9</p>
+                        <p class="raiting">Рейтинг:&#8194;8,9</p>
                     </div>
                 </article>
                 <article class="hotel-description">
@@ -174,11 +179,11 @@
                         <img src="img/villas-at-poco.jpg" width="135" height="90" alt="Фото апартаментов">
                     </div>
                     <div class="hotel-description-content">
-                        <p class="title">
+                        <p class="hotel-description-title">
                             <a href="#">Villas at Poco Diablo</a>
                         </p>
-                        <p>
-                            <span>Апартаменты</span>
+                        <p class="hotel-description-text text-row-three">
+                            Апартаменты
                             <span>от 2000 Р.</span>
                         </p>
                         <p class="two-buttons">
@@ -190,36 +195,37 @@
                         <p class="stars row-three-stars">
                             <span class="visually-hidden">2 звезды</span>
                         </p>
-                        <p class="raiting">Рейтинг:9,2</p>
+                        <p class="raiting">Рейтинг:&#8194;9,2</p>
                     </div>
                 </article>
-            </article>
+            </section>
+
         </main>
-       <footer class="site-footer">
+        <footer class="site-footer">
             <p class="footer-hashtag site-footer-column">
                 <a class="hashtag" href="#">#visitsedona</a>
             </p>
             <div class="footer-social site-footer-column">
                 <ul class="footer-social-list">
                     <li class="footer-social-list-tw">
-                        <button class="social" type="button">
+                        <a class="social" href="#">
                             <span class="visually-hidden">Твиттер</span>
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15"><image overflow="visible" width="17" height="15"/><path class="social-icon" fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z"/>
                             </svg>
-                        </button>
+                        </a>
                     </li>
                     <li class="footer-social-list-fb">
-                        <button class="social" type="button">
+                        <a class="social" href="#">
                             <span class="visually-hidden">Фейсбук</span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22"><path class="social-icon" fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/>
                             </svg>
-                        </button>
+                        </a>
                     </li>
                     <li class="footer-social-list-yt">
-                        <button class="social" type="button">
+                        <a class="social" href="#">
                             <span class="visually-hidden">Ютьюб</span>
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16"><image overflow="visible" width="20" height="16"/><path class="social-icon" fill="#FFF" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z"/></svg>
-                        </button>
+                        </a>
                     </li>
                 </ul>
             </div>
