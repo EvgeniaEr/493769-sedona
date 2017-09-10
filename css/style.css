@@ -846,7 +846,7 @@ img {
     color: rgb(255, 255, 255);
 
     background-image: url("../img/background-catalog.jpg");
-    min-height: 217px;
+    height: 217px;
     background-color: rgb(129, 179, 210);
     background-position: center;
     background-repeat: no-repeat;
@@ -862,7 +862,7 @@ img {
 	display: flex;
 	padding-left: 40px;
 	box-sizing: border-box;
-	padding-bottom: 20px;
+	padding-bottom: 25px;
 }
 
 .filter-infrastructure legend,
@@ -901,7 +901,7 @@ img {
 	justify-content: flex-start;
 	align-items: center;
 	margin: 0;
-	padding-top: 25px;
+	padding-top: 26px;
 	padding-bottom: 30px;
 	padding-right: 73px;
 	padding-left: 73px;
@@ -909,9 +909,17 @@ img {
 }
 
 .filter-infrastructure {
-	display: flex;
-	flex-direction: column;
-	width: 229px;
+	/*display: flex;
+	flex-direction: column;*/
+	width: 255px;
+	margin: 0;
+	padding: 0;
+}
+
+.filter-type-of-accommodation {
+	width: 486px;
+	margin: 0;
+	padding: 0;
 }
 
 .filter-column-left li {
@@ -966,8 +974,14 @@ img {
   width: 320px;
   margin: 0; 
   padding: 0;
-  color: #ffffff;
+  color: rgb(255, 255, 255);
   text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.filter-range input[type="text"] + label {
+	text-align: center;
+	vertical-align: middle;
 }
 
 .filter-range legend {
@@ -990,7 +1004,7 @@ img {
 
   font-size: 0;
 
-  border: 2px solid #ffffff;
+  border: 2px solid rgb(255, 255, 255);;
   border-radius: 2px;
 }
 
@@ -1003,7 +1017,7 @@ img {
   width: 2px;
   height: 22px;
 
-  background: #ffffff;
+  background: rgb(255, 255, 255);
   transform: translate(-50%, -50%);
 }
 
@@ -1050,7 +1064,7 @@ img {
   width: 80%;
   height: 2px;
 
-  background: #ffffff;
+  background: rgb(255, 255, 255);
 }
 
 .range-toggle {
@@ -1060,15 +1074,15 @@ img {
   width: 4px;
   height: 4px;
 
-  background: #ababab;
-  border: 8px solid #ffffff;
+  background: rgb(171, 171, 171);
+  border: 8px solid rgb(255, 255, 255);
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
 }
 
 .range-toggle:hover {
-  background: #1c4f80;
+  background: rgb(28, 79, 128)
 }
 
 .range-toggle-min {
@@ -1082,23 +1096,25 @@ img {
 .filter-range-btn-transparent {
   display: block;
   margin: 0 auto;
-  padding: 6px 35px;
+  padding: 6px 30px;
 
   font-size: 14px;
   line-height: 20px;
-  color: #ffffff;
+  color: rgb(255, 255, 255);
+
   text-transform: uppercase;
 
   background: transparent;
-  border: 2px solid #ffffff;
+  border: 2px solid rgb(255, 255, 255);
+
   border-radius: 2px;
   cursor: pointer;
 }
 
 .filter-range-btn-transparent:hover {
-  color: #000000;
+  color:  rgb(0, 0, 0);
 
-  background: #ffffff;
+  background: rgb(255, 255, 255);
 }
 
  
@@ -1108,21 +1124,22 @@ img {
 /*маленький фильтр для результатов поиска*/
 .results-filters {
 	display: flex;
-	justify-content: center;
+	flex-direction: row;
+    justify-content: center;
 	align-items: center;
 	padding-top: 30px;
-	padding-bottom:30px;
+	padding-bottom: 30px;
 	padding-right: 6%;
 	padding-left: 6%;
 	color: rgb(0, 0, 0);
     background-color: rgb(255, 255, 255);
     margin: 0;
     border-bottom: 1px solid rgb(235, 235, 235);
+
 }
 
 .results-filters-block-one {
 	display: flex;
-	flex-direction: row;
 	justify-content: flex-start;
 	align-items: center;
 	width: 280px;
@@ -1138,10 +1155,6 @@ img {
 	margin: 0;
 }
 
-.results-number {
-   
-}
-
 .sorting {
 	font-size: 12px;
 	line-height: 18px;
@@ -1150,13 +1163,15 @@ img {
 }
 
 .results-filters-block-two {
-    width: 538px;
+
+	width: 538px;
+    
 }
 
 .results-filters-block-two ul {
 	display: flex;
+	flex-direction: row;
 	justify-content: flex-start;
-	align-items: center;
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -1203,6 +1218,7 @@ img {
 
 .results-filters-block-three {
 	width: 241px;
+	
 }
 
 .results-filters-block-three ul {
@@ -1252,34 +1268,35 @@ img {
 	justify-content: flex-start;
 	align-items: center;
 	margin: 0;
-	padding-top: 28px;
-	padding-bottom: 30px;
 	padding-right: 6%;
 	padding-left: 6%;
 	border-bottom: 1px solid rgb(235, 235, 235);
 	font: inherit;
+	box-sizing: border-box;
+
 }
 
-/*.hotels-search-results article:first-child {
+.hotels-search-results article:first-child {
     border-top: 1px solid rgb(235, 235, 235);
-}*/
+}
 
 .hotel-description-img {
-	
+	width: 165px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
 .hotel-description-img img {
 	width: 135px;
 	height: 90px;
-	
-}
-
-.hotel-description-content p{
-	
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
 }
 
 .text-row-one span {
-	
+	margin: 0;
+	padding-left: 39px;
 }
 
 .text-row-two span {
@@ -1293,10 +1310,12 @@ img {
 }
 
 .hotel-description-content {
+	width: 780px;
 	display: flex;
 	flex-direction: column;
     justify-content: flex-start;
-   
+    box-sizing: border-box;
+    
 }
 
 .hotel-description-title {
@@ -1305,16 +1324,24 @@ img {
 	font-weight: 700;
 	color: rgb(0, 0, 0);
 	margin: 0;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
 	
-	
-}
+ }
 
 .hotel-description-text {
 	font-size: 14px;
 	line-height: 21px;
 	font-weight: 400;
 	margin: 0;
-	
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+    padding-top:7px;
+	padding-bottom: 17px;
 }
 
 .hotel-description-title a {
@@ -1333,20 +1360,23 @@ img {
     color: rgba(0, 0, 0, 0.5);
 }
 
-.two-buttons {
+.hotel-description-buttons-block {
 	font-size: 14px;
 	line-height: 21px;
 	font-weight: 700;
-	margin: 0;
-    
+	margin: 0;    
 	border: none;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-bottom: 8px;
 }
 
 .read-more {
 	display: inline-block;
 	padding: 3px 17px;
 	margin: 0;
-	padding-right: 5px;
+	margin-right: 5px;
 	color: rgb(255, 255, 255);
 	background-color: rgb(118, 99, 87);
 	
@@ -1389,8 +1419,16 @@ img {
 	background-color: rgb(80, 62, 51);
 }
 
+.hotel-description-raiting {
+	width: 112px;
+	padding-top: 30px;
+	padding-bottom: : 30px;
+
+	}
+
 .stars {
 	margin: 0;
+		
 	}
 
 .row-one-stars {
@@ -1400,7 +1438,7 @@ img {
     background-repeat: repeat-x;
     width: 72px;
     height: 17px;
-    
+    margin-left: 40px;   
 }
 
 .row-two-stars {
@@ -1410,7 +1448,7 @@ img {
     background-repeat: repeat-x;
     width: 52px;
     height: 17px;
-   
+    margin-left: 60px;
 }
 
 .row-three-stars {
@@ -1420,6 +1458,7 @@ img {
     background-repeat: repeat-x;
     width: 34px;
     height: 17px;
+    margin-left: 78px;
    
 }
 
@@ -1430,6 +1469,7 @@ img {
 	color: rgb(102, 102, 102);
 	background-color: rgb(242, 242, 242);
 	margin: 0;
+	
 }
 
 
