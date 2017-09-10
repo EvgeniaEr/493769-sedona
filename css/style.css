@@ -3,7 +3,7 @@ body {
     padding: 0;
 
 	font-family: 'PT Sans', 'Arial', sans-serif;
-	font-size: 14рх;
+	font-size: 14px;
 	line-height: 18px;
 	font-weight: 400;
 	color: rgb(51, 51, 51);
@@ -29,14 +29,14 @@ img {
     margin: 0 auto;
     position: relative;
     background-color: rgb(255, 255, 255);
-    box-shadow: 0 0 20px 0 rgb(51, 51, 51)
+    box-shadow: 0 0 15px rgba(0,0,0,.2); 
  }
 
  .catalog-conteiner {
     width: 1200px;
     margin: 0 auto;
     background-color: rgb(255, 255, 255);
-    box-shadow: 0 0 20px 0 rgb(51, 51, 51)
+   box-shadow: 0 0 15px rgba(0,0,0,.2); 
  }
 
 .visually-hidden {
@@ -234,17 +234,22 @@ img {
 
  }
 
- .reason-number {
- 	padding: 0;
- 	padding-top: 24px;
- 	padding-bottom: 22px;
+.reason-name {
+ 	margin: 0;
+ 	margin-bottom: 24px;
+ }
+
+.reason-number {
+ 	margin: 0;
+  	margin-bottom: 22px;
  }
 
  .reason-text {
  	margin: 0;
- 	padding-bottom: 11px;
+ 	margin-bottom: 11px;
  }
 
+  
 .reason-img-block {
 	margin: 0;
 	padding: 0;
@@ -323,7 +328,7 @@ img {
     font-weight: 700;
     color: rgb(0, 0, 0);
     margin: 0;
-    padding-bottom: 21px;
+    margin-bottom: 21px;
    
 }
 
@@ -447,7 +452,7 @@ img {
 	box-sizing: border-box;
 }
 
-.form-button .search {
+.search {
 	color: rgb(255, 255, 255);
 	font-size: 21px;
 	line-height: 26px;
@@ -461,35 +466,171 @@ img {
    
 }
 
-.form-button .search:hover {
+.search:hover {
 	color: rgb(255, 255, 255);
 	background-color: rgb(102, 158, 192);
-    width: 430px;
-    height: 60px;
     border: transparent;
 }
 
-.form-button .search:focus {
-	color: rgb(255, 255, 255);
-	background-color: rgb(102, 158, 192);
-    width: 430px;
-    height: 60px;
-    border: transparent;
-}
-
-.form-button .search:active {
+.search:active {
 	color: rgba(255, 255, 255, 0.5);
 	background-color: rgb(84, 150, 189);
-    width: 430px;
-    height: 60px;
     border: transparent;
 }
 
-.date-from input,
+.form-field label {
+	font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+}
+
+.form-field:first-child label,
+.form-field:nth-child(2) label {
+	width: 112px;
+}
+
+.form-field:first-child input,
+.form-field:nth-child(2) input {
+    width: 342px;
+    height: 36px;
+}
+
+.form-field input {
+    font-size: 14px;
+	line-height: 26px;
+	font-weight: 700;
+	text-transform: uppercase;
+    color: rgb(0, 0, 0);
+}
+
+.form-field input[type="text"] {
+	
+    padding-left: 13px;
+    box-sizing: border-box;
+
+	background-color: rgb(242, 242, 242);
+	border: 2px solid rgb(242, 242, 242);
+}
+
+.form-field input[type="text"]:hover {
+    background-color: rgb(235, 235, 235);
+    border: 2px solid rgb(235, 235, 235);
+}
+
+.form-field input[type="text"]:focus {
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(229, 229, 229);
+}
+
+.form-field:nth-child(3) input[type="text"] {
+	padding: 0;
+	text-align: center;
+}
+
+.form-field:nth-child(3) input {
+    width: 39px;
+    height: 33px;
+    border: none;
+    background-color: rgb(242, 242, 242); 
+    margin: 0;
+}
+
+.form-field:nth-child(3):hover input,
+.form-field:nth-child(3):focus input {
+	background-color: rgb(242, 242, 242);
+	border: none; 
+}
+
+.form-field:nth-child(3) button {
+	width: 39px;
+    height: 33px;
+    border: none;
+    background-color: rgb(242, 242, 242);
+    margin: 0;
+    }
+
+.quantity-block:first-child label {
+	width: 112px;
+}
+
+.quantity-block:last-child label {
+	width: 65px;
+	margin-left: 46px;
+}
+
+.form-field {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.quantity-block {
+    display: flex;
+    flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.form-field:first-child,
+.form-field:nth-child(2) {
+	position: relative;
+	margin-bottom: 32px; 
+}
+
+.form-field:first-child button {
+    width: 21px;
+    height: 22px;
+    background-color: transparent;
+    border: transparent;
+    position: absolute;
+    right: 12px;
+    top: 5px;
+}
+
+.form-field:nth-child(2) button {
+    width: 21px;
+    height: 22px;
+    background-color: transparent;
+    border: transparent;
+    position: absolute;
+    right: 12px;
+    top: 5px;
+}
+
+.form-field:nth-child(3) {
+	margin-bottom: 57px;
+}
+
+.form-field:nth-child(3) button {
+	color: rgb(169, 169, 169);
+}
+
+.form-field:nth-child(3) button:hover {
+	color: rgb(0, 0, 0);
+}
+
+.form-field:nth-child(3) button:active {
+	color: rgb(129, 179, 210);
+}
+
+.calendar .icon-calendar {
+	fill: rgb(169, 169, 169);
+}
+
+.calendar:hover .icon-calendar {
+	fill: rgb(0, 0, 0);
+}
+
+.calendar:active .icon-calendar {
+	fill: rgb(129, 179, 210);
+}
+
+
+/*.date-from input,
 .date-to input {
-	width: 341px;
+	width: 342px;
 	height: 36px;
-    font: inherit;
     font-size: 14px;
     line-height: 26px;
     font-weight: 700;
@@ -510,15 +651,13 @@ img {
 }
 
 .hotel-search-form label {
-	 font: inherit;
-    font-size: 14px;
+	font-size: 14px;
     line-height: 26px;
     font-weight: 700;
     color: rgb(0, 0, 0);
 }
 
 .hotel-search-form input[type="text"] {
-	font: inherit;
 	font-size: 14px;
 	line-height: 26px;
 	font-weight: 700;
@@ -528,6 +667,7 @@ img {
     box-sizing: border-box;
 
 	background-color: rgb(242, 242, 242);
+	border: 2px solid rgb(242, 242, 242);
 	
 }
 
@@ -566,29 +706,17 @@ img {
 }
 
 .hotel-search-form input[type="text"]:hover {
-    font: inherit;
     font-weight: 700;
     line-height: 26px;
     text-transform: uppercase;
     color: rgb(0, 0, 0);
 
     background-color: rgb(235, 235, 235);
-    border: transparent;
+    border: 2px solid rgb(235, 235, 235);
 }
+
 
 .hotel-search-form input[type="text"]:focus {
-    font: inherit;
-    font-weight: 700;
-    line-height: 26px;
-    text-transform: uppercase;
-    color: rgb(0, 0, 0);
-
-    background-color: rgb(235, 235, 235);
-    border: transparent;
-}
-
-.hotel-search-form input[type="text"]:active {
-    font: inherit;
     line-height: 26px;
     font-weight: 700;
     text-transform: uppercase;
@@ -607,8 +735,7 @@ img {
 }
 
 .form-quantity:hover input,
-.form-quantity:focus input,
-.form-quantity:active input {
+.form-quantity:focus input {
 	background-color: rgb(242, 242, 242);
 	border: none; 
 }
@@ -623,18 +750,17 @@ img {
     height: 33px;
     border: none;
     background-color: rgb(242, 242, 242);
-    margin: 0;
+    margin: 0;*/
 }
 
 .hotel-search-form {
 	width: 570px;
-	/*min-height: 395px;*/
 	margin: 0 auto;
 
 	background-color: rgb(255, 255, 255)
 }
 
-.date-from input {
+/*.date-from input {
 	margin: 0;
 	padding: 0
 }
@@ -696,7 +822,7 @@ img {
 .quantity-block-right label {
 	padding-right: 27px;
 	padding-left: 51px;
-}
+}*/
 
 
 /*footer*/
@@ -909,8 +1035,6 @@ img {
 }
 
 .filter-infrastructure {
-	/*display: flex;
-	flex-direction: column;*/
 	width: 255px;
 	margin: 0;
 	padding: 0;
@@ -924,13 +1048,13 @@ img {
 
 .filter-column-left li {
 	list-style: none;
-	font: inherit;
+	
    
 }
 
 .filter-column-center li {
 	list-style: none;
-	font: inherit;
+	
 	
 }
 
@@ -945,7 +1069,6 @@ img {
 }
 
 .filter legend {
-    font: inherit;
     font-weight: 600;
     font-size: 16px;
     line-height: 21px;
@@ -1270,8 +1393,9 @@ img {
 	margin: 0;
 	padding-right: 6%;
 	padding-left: 6%;
+	padding-top: 30px;
+	padding-bottom: 30px;
 	border-bottom: 1px solid rgb(235, 235, 235);
-	font: inherit;
 	box-sizing: border-box;
 
 }
@@ -1282,9 +1406,7 @@ img {
 
 .hotel-description-img {
 	width: 165px;
-	padding-top: 30px;
-	padding-bottom: 30px;
-}
+	}
 
 .hotel-description-img img {
 	width: 135px;
@@ -1328,6 +1450,7 @@ img {
 	justify-content: flex-start;
 	align-items: center;
 	
+	
  }
 
 .hotel-description-text {
@@ -1340,8 +1463,7 @@ img {
 	flex-direction: row;
 	justify-content: flex-start;
 	align-items: center;
-    padding-top:7px;
-	padding-bottom: 17px;
+	
 }
 
 .hotel-description-title a {
@@ -1369,7 +1491,7 @@ img {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	margin-bottom: 8px;
+	
 }
 
 .read-more {
@@ -1421,13 +1543,11 @@ img {
 
 .hotel-description-raiting {
 	width: 112px;
-	padding-top: 30px;
-	padding-bottom: : 30px;
-
-	}
+		}
 
 .stars {
 	margin: 0;
+	
 		
 	}
 
