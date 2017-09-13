@@ -28,7 +28,7 @@
                 <h1 class="visually-hidden">Поиск гостиницы в Седоне</h1>
                 <section class="hotels-filters">
                     <h2 class="visually-hidden">Фильтры для поиска гостиницы в Седоне</h2>
-                    <form class="filter" method="get" action="#">
+                    <form class="filter" method="get" action="https://echo.htmlacademy.ru/">
                         <fieldset class="filter-infrastructure">
                             <legend>Инфраструктура</legend>
                             <ul class="filter-column-left">
@@ -59,7 +59,7 @@
                                 </li>
                                 <li class="filter-type-of-accommodation-option">
                                 <input class="filter-input-checkbox" type="checkbox" name="accommodation" id="apartments" checked>
-                                <label for="motel">Апартаменты</label>
+                                <label for="apartments">Апартаменты</label>
                             </li>
                         </ul>
                     </fieldset>
@@ -105,12 +105,14 @@
                     <ul class="results-filters-triangular-button">
                         <li>
                             <a class="triangular-button" href="#">
+                                <span class="visually-hidden">стрелочка сортировки "вверх"</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path class="icon-dir" fill="#231F20" d="M5.5 0L0 10h11z"/>
                                 </svg>
                             </a>
                         </li>
                         <li>
                             <a class="triangular-button triangular-button-current">
+                                <span class="visually-hidden">стрелочка сортировки "вниз"</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path class="icon-dir" fill="#231F20" d="M5.5 10L0 0h11"/>
                                 </svg>
                             </a>
@@ -129,7 +131,7 @@
                             <a href="#">Amara resort & spa</a>
                         </h3>
                         <p class="hotel-description-text text-row-one">
-                            Гостиница
+                            <span>Гостиница</span>
                             <span>от 4000 Р.</span>
                         </p>
                         <p class="hotel-description-buttons-block">
@@ -139,7 +141,11 @@
                     </div>
                     <div class="hotel-description-raiting">
                         <p class="stars row-one-stars">
-                            <span class="visually-hidden">5 звезд</span>
+                            <span class="visually-hidden">4 звезды</span>
+                            <span class="star"></span>
+                            <span class="star"></span>
+                            <span class="star"></span>
+                            <span class="star"></span>
                         </p>
                         <p class="raiting">Рейтинг:&#8194;8,5</p>
                     </div>
@@ -153,7 +159,7 @@
                             <a href="#">Desert Quail Inn</a>
                         </h3>
                         <p class="hotel-description-text text-row-two">
-                            Мотель
+                            <span>Мотель</span>
                             <span>от 3000 Р.</span>
                         </p>
                         <p class="hotel-description-buttons-block">
@@ -164,6 +170,9 @@
                     <div class="hotel-description-raiting">
                         <p class="stars row-two-stars">
                             <span class="visually-hidden">3 звезды</span>
+                            <span class="star"></span>
+                            <span class="star"></span>
+                            <span class="star"></span>
                         </p>
                         <p class="raiting">Рейтинг:&#8194;8,9</p>
                     </div>
@@ -177,7 +186,7 @@
                             <a href="#">Villas at Poco Diablo</a>
                         </h3>
                         <p class="hotel-description-text text-row-three">
-                            Апартаменты
+                            <span>Апартаменты</span>
                             <span>от 2000 Р.</span>
                         </p>
                         <p class="hotel-description-buttons-block">
@@ -188,6 +197,8 @@
                     <div class="hotel-description-raiting">
                         <p class="stars row-three-stars">
                             <span class="visually-hidden">2 звезды</span>
+                            <span class="star"></span>
+                            <span class="star"></span>
                         </p>
                         <p class="raiting">Рейтинг:&#8194;9,2</p>
                     </div>
